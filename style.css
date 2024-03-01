@@ -1,0 +1,14 @@
+.list li {
+  display: flex;
+  gap: 12px;
+}
+
+.list li span {
+  border: 1px solid black;
+  padding: 2px 4px;
+  width: 43px;
+  height: 21px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
