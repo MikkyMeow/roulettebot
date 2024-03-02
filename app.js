@@ -2,7 +2,7 @@ const input = document.getElementById("number");
 const button = document.getElementById("submit");
 const list = document.getElementById("list");
 const nextNumber = document.getElementById("nextNumber");
-let num = Math.floor(Math.random() * 36);
+let num = Math.floor(Math.random() * 36) + 1;
 nextNumber.innerHTML = num;
 button.addEventListener("click", () => {
   generateLine();
@@ -43,7 +43,7 @@ const generateLine = () => {
     }
     input.value = "";
     list.append(li);
-    num = Math.floor(Math.random() * 36);
+    num = Math.floor(Math.random() * 36) + 1;
     nextNumber.innerHTML = num;
   } else {
     input.value = "";
